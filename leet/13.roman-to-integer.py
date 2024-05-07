@@ -32,8 +32,6 @@ class Solution:
             prevChar = curChar
         result += prevValue
         return result
-                
-
 
 
 

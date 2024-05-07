@@ -15,7 +15,7 @@ class Solution:
         while i >= 0:
             price = prices[i]
             maxes[i] = max(price, maxes[i+1])
-            res = max(res, maxes[i+1] - prices[i])
+            res = max(res, maxes[i] - prices[i])
             i -= 1
         return max(res, 0)
 

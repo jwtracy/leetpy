@@ -11,7 +11,7 @@ class Solution:
             return [nums]
 
         allPerms = []
-        for perm in permutations(nums[1:]):
+        for perm in self.permute(nums[1:]):
             for i in range(len(nums)):
                 allPerms.append(tuple(perm[:i]) + tuple(nums[0:1]) + tuple(perm[i:]))
 
